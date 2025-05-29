@@ -164,7 +164,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
                         text_data = re.sub(r'(?<!\.)\./kpatch\b', './psfree/kpatch', text_data)
                         text_data = re.sub(r'(?<!\.)\./module\b', './module', text_data)
                         text_data = re.sub(r'(?<!\.)\./rop\b', '../rop', text_data)
-                        text_data = text_data.replace('alert("kernel exploit succeeded!");', '//alert("kernel exploit succeeded!");')
+                        text_data = text_data.replace('alert("kernel exploit succeeded!");', '//alert("Goldhen kilidi açıldı, Rahat oyunlarınızı oynaya bilersiniz. Her hansısa xeta aldigiiniz zaman derhal konsolu yeniden baslatin!");')
                         text_data = text_data.replace("const textarea = document.createElement('textarea');", "const textarea = document.createElement('textarea');\n       textarea.style.opacity = '0'; // Set the opacity to 0")
                         text_data = text_data.replace("const fset = document.createElement('frameset');", "const fset = document.createElement('frameset');\n           fset.style.opacity = '0'; // Set the opacity to 0")
                         text_data = text_data.replace("const input = document.createElement('input');", "const input = document.createElement('input');\n    input.style.opacity = '0'; // Set the opacity to 0")
